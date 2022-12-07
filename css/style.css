@@ -1,0 +1,246 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden!important;
+}
+
+/*=====START GLOBAL CSS=====*/
+
+button:focus {
+    outline: none !important;
+}
+
+/*=====END GLOBAL CSS=====*/
+
+/*=====NAVBAR CSS=====*/
+.navbar {
+    background: linear-gradient(180deg, rgba(0, 130, 206, 0.9) 0%, rgba(0, 98, 155, 0.9) 100%);
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7.5px);
+}
+.navbar .nav-link{
+    font-size: 12px!important;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.navbar .btn {
+    background: linear-gradient(180deg, #1EB53A 0%, #1B882F 100%);
+    border-radius: 25px;
+    font-size: 12px!important;
+    font-weight: 500;
+    padding: 6px 24px!important;
+    border-bottom: 0px;
+}
+
+.navbar ul li .nav-link.active::after,
+.navbar ul li .nav-link:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+/*=====HOME PAGE=====*/
+/*===BANNER CSS===*/
+#banner {
+    background: url(../images/banner.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    margin-top: 80px;
+    padding: 370px 0px 30px 0px;
+    position: relative;
+}
+
+#banner .banner-info{
+    position: absolute;
+    top: 100%;
+}
+#banner .banner-title{
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#banner .banner-info .title-border{
+    display: inline-block;
+}
+#banner .banner-info .title-border::after{
+    content: '';
+    display: block;
+    height: 5px;
+    background: #1EB53A;
+    border-radius: 2px;
+}
+#banner .banner-text{
+    font-size: 20px;
+}
+
+/*===ICON & WASHIMS Data SEARCH CSS===*/
+#icon-data-search .bg-color{
+    background: linear-gradient(265.09deg, #004172 -18.03%, #0082CE 105.4%);
+}
+
+#icon-data-search .icon img{
+    width: 80px;
+}
+#icon-data-search .icon p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+ .search_wrap .search_box{
+	position: relative;
+}
+
+ .search_wrap .search_box .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 12px;
+    border-radius: 0px;
+    padding-left: 45px;
+    font-style: italic;
+    height: 40px;
+}
+
+ .search_wrap .search_box .btn.btn_common .bi-search{
+	position: absolute;
+    top: 90%;
+    left: 7%;
+	transform: translate(-50%,-50%);
+    color: #ff0000;
+    font-size: 16px;
+}
+
+.search-btn{
+    background: linear-gradient(180deg, #23C641 0%, #1B882F 100%);
+    font-size: 14px;
+    border-radius: 21px;
+    font-weight: 500;
+    padding: 9px 26px!important;
+    border-bottom: 0px;
+    z-index: 999;
+}
+/*=== WASH IN HOUSE HOLD CSS===*/
+#wash-in-household .info{
+    padding: 170px;
+}
+#wash-in-household .info h4{
+    font-weight: 600;
+}
+#wash-in-household .info p{
+    font-size: 14px;
+}
+
+/* FEATURED RESOURCES CSS */
+#featured-resources .img img{
+    position: relative;
+}
+#featured-resources .info{
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    width: 65%;
+}
+#featured-resources h6{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* SUBSCRIBE */
+#subscribe{
+    background: linear-gradient(265.09deg, #004172 -18.03%, #0082CE 105.4%);
+}
+
+/* FOOTER */
+footer{
+    background: #003256;
+}
+
+#footer-widget .row{
+    background: #799DB3;
+}
+#footer-widget .nav-link{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px!important;
+    color: #fff!important;
+}
+
+#copy-right .row{
+    background: #001626;
+}
+#copy-right .copy-right-text{
+    font-size: 13px;
+}
+#copy-right .nav .nav-link{
+    font-size: 10px;
+    color: #fff;
+}
+
+@media screen and (max-width: 1023.98px) {
+    #banner {
+        height: 550px;
+        padding-top: 300px;
+    }
+    #banner .banner-title{
+        font-size: 35px;
+    }
+    #banner .banner-text{
+        font-size: 17px;
+    }
+/*=== WASH IN HOUSE HOLD CSS===*/
+    #wash-in-household .info{
+        padding: 75px;
+    }
+    #wash-in-household .info h4{
+        font-size:20px;
+    }
+
+}
+
+@media screen and (max-width: 767.98px) {
+    #banner {
+        height: 420px;
+        padding-top: 200px;
+    }
+    #banner .banner-title{
+        font-size: 27px;
+    }
+    #banner .banner-text{
+        font-size: 13px;
+    }
+
+/*=== WASH IN HOUSE HOLD CSS===*/
+    #wash-in-household .info{
+        padding: 0px;
+    }
+
+}
+@media screen and (max-width: 575.98px) {
+    #featured-resources .info{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 425.98px) {
+    #banner {
+        height: 350px;
+        padding-top: 120px;
+    }
+    #banner .banner-info{
+        position: static;
+        top: 0;
+    }
+    #banner .banner-title{
+        font-size: 20px;
+    }
+
+    #featured-resources .info{
+        width: 60%;
+    }
+    
+}
