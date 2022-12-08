@@ -7,6 +7,9 @@ body {
 button:focus {
     outline: none !important;
 }
+footer{
+    background: #001626!important;
+}
 /*=====END GLOBAL CSS=====*/
 
 /*=====NAVBAR CSS=====*/
@@ -210,14 +213,63 @@ footer{
     color: #fff!important;
 }
 /* ====== Footer  ====== */
-.resources-page footer{
-    background: #001626;
-}
+
 /*=================== Resources PAGE CSS END =======================*/
 
 
 /*=================== LOGIN PAGE CSS Start =======================*/
+/* ====== Login Banner ====== */
 
+#login-banner{
+    background: url(../images/login-bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#login-banner .banner-overlay{
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.8) -5.01%, rgba(20, 20, 20, 0) 98.38%)!important;
+}
+#login-banner .form-info{
+    background: rgba(252, 252, 252);
+    border-radius: 20px;
+    backdrop-filter: blur(11px);
+}
+#login-banner .form-info p{
+    font-size: 9px;
+    color: #0072C6;
+    font-weight: 500;
+}
+#login-banner .form-info h6{
+    font-size: 12px;
+    color: #E91A1A;
+    font-weight: 500;
+}
+#login-banner form{
+    position: relative;
+}
+#login-banner form label.email,
+#login-banner form label.password{
+    font-size: 12px;
+    position: absolute;
+    top: -9px;
+    left: 12px;
+    background-color: rgba(252, 252, 252);
+    padding: 0px 10px;
+}
+#login-banner form label.password{
+    top: 47.5px;
+}
+#login-banner form input{
+    background: transparent;
+    border: 2px solid #929292;
+    font-size: 12px;
+    color: #000;
+    height: 40px;
+}
+#login-banner form .btn{
+    background: linear-gradient(360deg, #004172 -37.04%, #0082CE 117.59%);
+    color: #fff;
+}
 /*=================== LOGIN PAGE CSS END =======================*/
 
 
@@ -285,6 +337,8 @@ footer{
     }
 
 }
+
+
 @media screen and (max-width: 575.98px) {
 /*======= HOME PAGE MEDIA QUERY CSS  ========*/
 
