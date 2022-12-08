@@ -1,14 +1,12 @@
+/*=====START GLOBAL CSS=====*/
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden!important;
 }
 
-/*=====START GLOBAL CSS=====*/
-
 button:focus {
     outline: none !important;
 }
-
 /*=====END GLOBAL CSS=====*/
 
 /*=====NAVBAR CSS=====*/
@@ -41,7 +39,7 @@ button:focus {
     border-radius: 2px;
 }
 
-/*=====HOME PAGE=====*/
+/*=================== HOME PAGE CSS START =======================*/
 /*===BANNER CSS===*/
 #banner {
     background: url(../images/banner.png);
@@ -53,7 +51,6 @@ button:focus {
     padding: 370px 0px 30px 0px;
     position: relative;
 }
-
 #banner .banner-info{
     position: absolute;
     top: 100%;
@@ -85,17 +82,18 @@ button:focus {
 #icon-data-search .icon img{
     width: 80px;
 }
+
 #icon-data-search .icon p{
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 0px;
 }
 
- .search_wrap .search_box{
+.search_wrap .search_box{
 	position: relative;
 }
 
- .search_wrap .search_box .input{
+.search_wrap .search_box .input{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -106,7 +104,7 @@ button:focus {
     height: 40px;
 }
 
- .search_wrap .search_box .btn.btn_common .bi-search{
+.search_wrap .search_box .btn.btn_common .bi-search{
 	position: absolute;
     top: 90%;
     left: 7%;
@@ -124,6 +122,7 @@ button:focus {
     border-bottom: 0px;
     z-index: 999;
 }
+
 /*=== WASH IN HOUSE HOLD CSS===*/
 #wash-in-household .info{
     padding: 170px;
@@ -144,11 +143,11 @@ button:focus {
     bottom: 25px;
     left: 0;
     right: 0;
-    width: 65%;
+    width: 70%;
 }
 #featured-resources h6{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* SUBSCRIBE */
@@ -174,15 +173,59 @@ footer{
 #copy-right .row{
     background: #001626;
 }
+
 #copy-right .copy-right-text{
     font-size: 13px;
 }
+
 #copy-right .nav .nav-link{
     font-size: 10px;
     color: #fff;
 }
+/*=================== HOME PAGE CSS END =======================*/
 
+
+/*=================== Resources PAGE CSS START =======================*/
+/* ====== Resouces Banner ====== */
+#resources-banner .title-bg{
+    background: linear-gradient(180deg, #30D54E 0%, #1B882F 100%);
+    border-radius: 5px;
+    margin-top: 100px;
+}
+#resources-banner .banner-bg{
+    background: url(../images/resources-banner.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 30px 20px 30px;
+}
+
+/* ====== Featured Resouces  ====== */
+#featured-resources .page-item .page-link{
+    color: #4D4F5C!important;
+    font-size: 13px;
+}
+#featured-resources .page-item.active .page-link{
+    background: linear-gradient(180deg, #0197EF 0%, #0552B5 100%);
+    color: #fff!important;
+}
+/* ====== Footer  ====== */
+.resources-page footer{
+    background: #001626;
+}
+/*=================== Resources PAGE CSS END =======================*/
+
+
+/*=================== LOGIN PAGE CSS Start =======================*/
+
+/*=================== LOGIN PAGE CSS END =======================*/
+
+
+/*============ MEDIA QUERY CSS FOR RESPONSIVE =============*/
 @media screen and (max-width: 1023.98px) {
+/*======= HOME PAGE MEDIA QUERY CSS  ========*/
+
+    /*===BANNER CSS===*/
     #banner {
         height: 550px;
         padding-top: 300px;
@@ -193,7 +236,8 @@ footer{
     #banner .banner-text{
         font-size: 17px;
     }
-/*=== WASH IN HOUSE HOLD CSS===*/
+
+    /*=== WASH IN HOUSE HOLD CSS===*/
     #wash-in-household .info{
         padding: 75px;
     }
@@ -201,9 +245,19 @@ footer{
         font-size:20px;
     }
 
+
+/*=================== Resources PAGE MEDIA QUERY CSS =======================*/
+    /* ====== Resouces Banner ====== */
+    #resources-banner .banner-title{
+        font-size: 40px;
+    }
+
 }
 
 @media screen and (max-width: 767.98px) {
+/*======= HOME PAGE MEDIA QUERY CSS  ========*/
+
+    /*===BANNER CSS===*/
     #banner {
         height: 420px;
         padding-top: 200px;
@@ -215,18 +269,34 @@ footer{
         font-size: 13px;
     }
 
-/*=== WASH IN HOUSE HOLD CSS===*/
+    /*=== WASH IN HOUSE HOLD CSS===*/
     #wash-in-household .info{
         padding: 0px;
     }
 
+
+/*=================== Resources PAGE MEDIA QUERY CSS =======================*/
+    /* ====== Resouces Banner ====== */
+    #resources-banner .banner-bg{
+        padding-top: 140px;
+    }
+    #resources-banner .banner-title{
+        font-size: 34px;
+    }
+
 }
 @media screen and (max-width: 575.98px) {
+/*======= HOME PAGE MEDIA QUERY CSS  ========*/
+
+    /*=== Featured Resources ===*/
     #featured-resources .info{
         width: 40%;
     }
 }
 @media screen and (max-width: 425.98px) {
+/*======= HOME PAGE MEDIA QUERY CSS  ========*/
+
+    /*===BANNER CSS===*/
     #banner {
         height: 350px;
         padding-top: 120px;
@@ -239,8 +309,20 @@ footer{
         font-size: 20px;
     }
 
+    /*=== Featured Resources ===*/
     #featured-resources .info{
         width: 60%;
+    }
+
+
+
+/*=================== Resources PAGE MEDIA QUERY CSS =======================*/
+    /* ====== Resouces Banner ====== */
+    #resources-banner .banner-bg{
+        padding-top: 90px;
+    }
+    #resources-banner .banner-title{
+        font-size: 29px;
     }
     
 }
