@@ -35,6 +35,225 @@
 </head>
 
 <body>
+    <!-- Create Lam Form 1 -->
+    <section>
+        <div class="container">
+            <div class="row p-4 pb-5" style="background: #F3F3F3;">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6 align-self-center">
+                            <h5 class="font-weight-bold">Create LAM</h5>
+                        </div>
+                        <div class="col-6">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb bg-transparent justify-content-end">
+                                    <li class="breadcrumb-item font-weight-bold"><a href="#">1</a></li>
+                                    <li class="breadcrumb-item font-weight-bold active" aria-current="page">3</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-4 pb-4">
+                    <form>
+                        <!-- Name -->
+                        <div class="form-row">
+                            <div class="form-group col-md-4 pr-4">
+                                <label for="first_name" class="mb-0 text-primary"><small>Firstname</small></label>
+                                <input type="text" class="form-control form-control-sm rounded-pill" id="first_name">
+                            </div>
+                            <div class="form-group col-md-4 px-4">
+                                <label for="middle_name" class="mb-0 text-primary"><small>Middle Name</small></label>
+                                <input type="text" class="form-control form-control-sm rounded-pill" id="middle_name">
+                            </div>
+                            <div class="form-group col-md-4 pl-4">
+                                <label for="last_name" class="mb-0 text-primary"><small>Lastname</small></label>
+                                <input type="text" class="form-control form-control-sm rounded-pill" id="last_name">
+                            </div>
+                        </div>
+                        <!-- Date of Birth, Phone Number & Alternate Phone Number -->
+                        <div class="form-row mt-4">
+                            <!-- Date of Birth -->
+                            <div class="form-group col-md-4 pr-4 mb-0">
+                                <label for="work_address" class="mb-0 text-primary"><small>Date of Birth</small></label>
+                                <div class="form-row">
+                                    <!-- DATE -->
+                                    <div class="form-group col-md-3">
+                                        <select class="custom-select custom-select-sm rounded-pill">
+                                            <option selected>DD</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- MONTH -->
+                                    <div class="form-group col-md-5">
+                                        <select class="custom-select custom-select-sm rounded-pill">
+                                            <option selected>January</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- YEAR -->
+                                    <div class="form-group col-md-4">
+                                        <select class="custom-select custom-select-sm rounded-pill">
+                                            <option selected>YYYY</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Phone Number -->
+                            <div class="form-group col-md-4 px-4 mb-0">
+                                <label for="work_address" class="mb-0 text-primary"><small>Phone Number</small></label>
+                                <div class="form-row">
+                                    <!-- Country Code -->
+                                    <div class="form-group col-md-3">
+                                        <select class="custom-select custom-select-sm rounded-pill">
+                                            <option selected>+234</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- Number -->
+                                    <div class="form-group col-md-9">
+                                        <input type="text" class="form-control form-control-sm rounded-pill">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Alternate Phone Number -->
+                            <div class="form-group col-md-4 pl-4 mb-0">
+                                <label for="work_address" class="mb-0 text-primary"><small>Alternate Phone Number</small></label>
+                                <div class="form-row">
+                                    <!-- Country Code -->
+                                    <div class="form-group col-md-3">
+                                        <select class="custom-select custom-select-sm rounded-pill">
+                                            <option selected>+234</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <!-- Number -->
+                                    <div class="form-group col-md-9">
+                                        <input type="text" class="form-control form-control-sm rounded-pill">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Home Address -->
+                        <div class="form-group mt-4 pb-2">
+                            <label for="home_address" class="mb-0 text-primary"><small>Home Address</small></label>
+                            <input type="text" class="form-control form-control-sm rounded-pill" id="home_address">
+                        </div>
+                        <!-- Work Address -->
+                        <div class="form-group mt-4 pb-2">
+                            <label for="work_address" class="mb-0 text-primary"><small>Work Address</small></label>
+                            <input type="text" class="form-control form-control-sm rounded-pill" id="work_address">
+                        </div>
+                        <!-- State ID, LGA ID & LGA NAME -->
+                        <div class="form-row mt-4">
+                            <!-- State ID -->
+                            <div class="form-group col-md-4 pr-4">
+                                <label for="work_address" class="mb-0 text-primary"><small>State ID</small></label>
+                                <select class="custom-select custom-select-sm rounded-pill">
+                                    <option selected>select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- LGA ID -->
+                            <div class="form-group col-md-4 pr-4">
+                                <label for="work_address" class="mb-0 text-primary"><small>LGA ID</small></label>
+                                <select class="custom-select custom-select-sm rounded-pill">
+                                    <option selected>select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- LGA NAME -->
+                            <div class="form-group col-md-4 pr-4">
+                                <label for="work_address" class="mb-0 text-primary"><small>LGA NAME</small></label>
+                                <select class="custom-select custom-select-sm rounded-pill">
+                                    <option selected>select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Zone Name, State Name & Zone ID -->
+                        <div class="form-row mt-4">
+                            <!-- Zone Name -->
+                            <div class="form-group col-md-4 pr-4">
+                                <label for="work_address" class="mb-0 text-primary"><small>Zone Name</small></label>
+                                <select class="custom-select custom-select-sm rounded-pill">
+                                    <option selected>select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- State Name -->
+                            <div class="form-group col-md-4 pr-4">
+                                <label for="work_address" class="mb-0 text-primary"><small>State Name</small></label>
+                                <select class="custom-select custom-select-sm rounded-pill">
+                                    <option selected>select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- Zone ID -->
+                            <div class="form-group col-md-4 pr-4">
+                                <label for="work_address" class="mb-0 text-primary"><small>Zone ID</small></label>
+                                <select class="custom-select custom-select-sm rounded-pill">
+                                    <option selected>select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- LAM Category & Specializations -->
+                        <div class="form-row mt-4">
+                            <!-- State ID -->
+                            <div class="form-group col-md-4 pr-4">
+                                <label for="work_address" class="mb-0 text-primary"><small>LAM Category</small></label>
+                                <select class="custom-select custom-select-sm rounded-pill">
+                                    <option selected>select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- LGA ID -->
+                            <div class="form-group col-md-4 pr-4">
+                                <label for="work_address" class="mb-0 text-primary"><small>Specializations</small></label>
+                                <select class="custom-select custom-select-sm rounded-pill">
+                                    <option selected>select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-right mt-5">
+                            <button type="submit" class="btn btn-sm px-4 bg-transparent border mr-3 text-green" style="border-color: #1EB53A!important;">Cancel</button>
+                            <button type="submit" class="btn btn-sm px-4 bg-gradient-green text-white">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
 
     <!-- jQuery Js, Popper Js, Bootstrap JS -->
