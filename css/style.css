@@ -12,6 +12,10 @@ input[type=date]::-webkit-datetime-edit-year-field {
 }
 /* Input type Date placeholder Remove */
 
+.form-control:focus{
+    box-shadow: none!important;
+}
+
 .font-13px{
     font-size: 13px!important;
 }
@@ -192,7 +196,7 @@ footer{
 
 /* FOOTER */
 .home-page footer{
-    background: #003256;
+    background: #003256!important;
 }
 
 #footer-widget .row{
@@ -298,6 +302,12 @@ footer{
     font-size: 12px;
     color: #000;
     height: 40px;
+}
+#login-banner form input:focus-visible{
+    border-color: #1EB53A!important;
+}
+#login-banner form input:focus-visible #login-banner form label.password{
+    color: #1EB53A!important;
 }
 #login-banner form .btn{
     background: linear-gradient(360deg, #004172 -37.04%, #0082CE 117.59%);
