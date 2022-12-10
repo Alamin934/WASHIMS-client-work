@@ -3,6 +3,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden!important;
 }
+/* Input type Date placeholder Remove */
+input[type=date]::-webkit-datetime-edit-text,
+input[type=date]::-webkit-datetime-edit-month-field,
+input[type=date]::-webkit-datetime-edit-day-field,
+input[type=date]::-webkit-datetime-edit-year-field {
+    display: none;
+}
+/* Input type Date placeholder Remove */
+
 .font-13px{
     font-size: 13px!important;
 }
@@ -10,14 +19,17 @@ body {
     color: #1EB53A;
 }
 .text-blue{
-    background: #0082CE;
+    color: #0082CE;
 }
 .bg-blue{
     background: #0082CE;
 }
+.bg-gray{
+    background: #ECECEC;
+}
 .bg-gradient-blue{
     background: linear-gradient(180deg, #1BAAFD 0%, #00507E 100%);
-    border-radius: 8px;
+    border-radius: 8px!important;
 }
 .bg-gradient-green{
     background: linear-gradient(180deg, #30D54E 0%, #1B882F 100%);

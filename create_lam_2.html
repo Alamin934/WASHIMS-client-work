@@ -54,76 +54,123 @@
                         </div>
                     </div>
                 </div>
-                <!-- Start Form-->
+                <!-- Start Registrations, Training Form & Table -->
                 <div class="col-12 mt-4 pb-4">
                     <h6 class="font-weight-bold">Registrations</h6>
-                    <!-- Form & Table -->
+                    <!-- Registrations Form & Table -->
                     <form>
                         <!-- Registration Form -->
-                        <div class="form-row">
-                            <div class="form-group col-auto">
-                                <label for="date" class="mb-0 text-primary"><small>Date</small></label>
-                                <input type="date" class="form-control form-control-sm rounded-pill" id="date">
+                        <div class="pb-5">
+                            <div class="form-row">
+                                <div class="form-group col-auto">
+                                    <label for="date" class="mb-0 text-blue"><small>Date</small></label>
+                                    <input type="date" class="form-control form-control-sm rounded-pill bg-gray" id="date">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="institution" class="mb-0 text-blue"><small>Institution</small></label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill bg-gray" id="institution">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="name" class="mb-0 text-blue"><small>Name</small></label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill bg-gray" id="name">
+                                </div>
+                                <div class="form-group col-auto">
+                                    <label for="date_registered" class="mb-0 text-blue"><small>Date Registered</small></label>
+                                    <input type="date" class="form-control form-control-sm rounded-pill bg-gray" id="date_registered">
+                                </div>
+                                <div class="form-group col-auto">
+                                    <label for="date_expiry" class="mb-0 text-blue"><small>Date Expiry</small></label>
+                                    <input type="date" class="form-control form-control-sm rounded-pill bg-gray" id="date_expiry">
+                                </div>
+                                <div class="form-group col-auto mb-0 align-self-center">
+                                    <button type="submit" class="btn bg-gradient-blue text-white"><i class="bi bi-plus-lg"></i></button>
+                                </div>
                             </div>
-                            <div class="form-group col-md-3">
-                                <label for="institution" class="mb-0 text-primary"><small>Institution</small></label>
-                                <input type="text" class="form-control form-control-sm rounded-pill" id="institution">
-                            </div>
-                            <div class="form-group col-md-3">
-                                <label for="name" class="mb-0 text-primary"><small>Name</small></label>
-                                <input type="text" class="form-control form-control-sm rounded-pill" id="name">
-                            </div>
-                            <div class="form-group col-auto">
-                                <label for="date_registered" class="mb-0 text-primary"><small>Date Registered</small></label>
-                                <input type="date" class="form-control form-control-sm rounded-pill" id="date_registered">
-                            </div>
-                            <div class="form-group col-auto">
-                                <label for="date_expiry" class="mb-0 text-primary"><small>Date Expiry</small></label>
-                                <input type="date" class="form-control form-control-sm rounded-pill" id="date_expiry">
-                            </div>
-                            <div class="form-group col-auto mb-0 align-self-center">
-                                <button type="submit" class="btn bg-gradient-blue text-white"><i class="bi bi-plus-lg"></i></button>
+                            <!-- Registration Table -->
+                            <div class="bg-white p-3 table-responsive pb-5" style="border-radius: 10px;">
+                                <table class="table table-borderless pb-3">
+                                    <!-- Table Heading -->
+                                    <thead class="bg-gradient-blue text-white font-13px mb-4">
+                                    <tr>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Institution</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Date Registered</th>
+                                        <th scope="col">Date Expiry</th>
+                                    </tr>
+                                    </thead>
+                                    <!-- Table Body or Data -->
+                                    <tbody>
+                                    <tr class="font-13px bg-gray">
+                                        <td>Date</td>
+                                        <td>Institution</td>
+                                        <td>Name</td>
+                                        <td>Date Registered</td>
+                                        <td>Date Expiry</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <!-- Table -->
-                        <table class="table table-borderless">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                                <th scope="col">Handle</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                              </tr>
-                            </tbody>
-                          </table>
 
+                        <!-- Training Form & Table -->
+                        <div class="pt-3">
+                            <h6 class="font-weight-bold">Training</h6>
+                            <!-- Training Form -->
+                            <div class="form-row">
+                                <div class="form-group col-auto">
+                                    <label for="date" class="mb-0 text-blue"><small>Date</small></label>
+                                    <input type="date" class="form-control form-control-sm rounded-pill bg-gray" id="date">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="institution" class="mb-0 text-blue"><small>Title</small></label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill bg-gray" id="institution">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="name" class="mb-0 text-blue"><small>Organizer</small></label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill bg-gray" id="name">
+                                </div>
+                                <div class="form-group col-auto">
+                                    <label for="date_registered" class="mb-0 text-blue"><small>Certificate</small></label>
+                                    <input type="date" class="form-control form-control-sm rounded-pill bg-gray" id="date_registered">
+                                </div>
+                                <div class="form-group col-auto">
+                                    <label for="date_expiry" class="mb-0 text-blue"><small>Date Expiry</small></label>
+                                    <input type="date" class="form-control form-control-sm rounded-pill bg-gray" id="date_expiry">
+                                </div>
+                                <div class="form-group col-auto mb-0 align-self-center">
+                                    <button type="submit" class="btn bg-gradient-blue text-white"><i class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                            <!-- Training Table -->
+                            <div class="bg-white p-3 table-responsive pb-5" style="border-radius: 10px;">
+                                <table class="table table-borderless">
+                                    <!-- Table Heading -->
+                                    <thead class="bg-gradient-blue text-white font-13px mb-4">
+                                      <tr>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Organizer</th>
+                                        <th scope="col">Certificate</th>
+                                        <th scope="col">Rating</th>
+                                      </tr>
+                                    </thead>
+                                    <!-- Table Body or Data -->
+                                    <tbody>
+                                      <tr class="font-13px bg-gray">
+                                        <td>Date</td>
+                                        <td>Title</td>
+                                        <td>Organizer</td>
+                                        <td>Certificate</td>
+                                        <td>Rating</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                         <!-- Button -->
                         <div class="text-right mt-5">
-                            <button type="submit" class="btn btn-sm px-4 bg-transparent border mr-3 text-green" style="border-color: #1EB53A!important;">Cancel</button>
+                            <button type="submit" class="btn btn-sm px-4 bg-transparent border mr-3 text-green" style="border-color: #1EB53A!important;">Back</button>
                             <button type="submit" class="btn btn-sm px-4 bg-gradient-green text-white">Next</button>
                         </div>
                     </form>
