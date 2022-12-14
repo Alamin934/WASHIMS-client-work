@@ -262,14 +262,23 @@ footer{
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
+    position: relative;
 }
 #login-banner .banner-overlay{
     background: linear-gradient(0deg, rgba(20, 20, 20, 0.8) -5.01%, rgba(20, 20, 20, 0) 98.38%)!important;
+    min-height: 100vh;
 }
+
 #login-banner .form-info{
     background: rgba(252, 252, 252);
     border-radius: 20px;
     backdrop-filter: blur(11px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
 }
 #login-banner .form-info p{
     font-size: 9px;
@@ -317,12 +326,19 @@ footer{
 
 
 /*============ MEDIA QUERY CSS FOR RESPONSIVE =============*/
+
 @media screen and (max-width: 1200px) {
 /*======= HOME PAGE MEDIA QUERY CSS  ========*/
 
     /*=== WASH IN HOUSE HOLD CSS===*/
     #wash-in-household .info{
         padding: 80px;
+    }
+
+    /*=================== Login PAGE MEDIA QUERY CSS =======================*/
+    /* ====== Login Form ====== */
+    #login-banner .form-info{
+        width: 40%;
     }
 }
 
@@ -358,6 +374,12 @@ footer{
         font-size: 40px;
     }
 
+/*=================== Login PAGE MEDIA QUERY CSS =======================*/
+    /* ====== Login Form ====== */
+    #login-banner .form-info{
+        width: 50%;
+    }
+
 }
 @media screen and (max-width: 991.98px) {
 /*======= HOME PAGE MEDIA QUERY CSS  ========*/
@@ -367,6 +389,13 @@ footer{
         padding: 0px;
     }
     
+
+
+/*=================== Login PAGE MEDIA QUERY CSS =======================*/
+    /* ====== Login Form ====== */
+    #login-banner .form-info{
+        width: 50%;
+    }
 
 }
 
@@ -397,10 +426,11 @@ footer{
     }
 
 
-    /* .form-group{
-        padding-left: 0px!important;
-        padding-right: 0px!important;
-    } */
+/*=================== Login PAGE MEDIA QUERY CSS =======================*/
+    /* ====== Login Form ====== */
+    #login-banner .form-info{
+        width: 60%;
+    }
 
 }
 
@@ -411,6 +441,12 @@ footer{
     /*=== Featured Resources ===*/
     #featured-resources .info{
         width: 40%;
+    }
+
+/*=================== Login PAGE MEDIA QUERY CSS =======================*/
+    /* ====== Login Form ====== */
+    #login-banner .form-info{
+        width: 75%;
     }
 }
 @media screen and (max-width: 425.98px) {
@@ -434,8 +470,6 @@ footer{
         width: 60%;
     }
 
-
-
 /*=================== Resources PAGE MEDIA QUERY CSS =======================*/
     /* ====== Resouces Banner ====== */
     #resources-banner .banner-bg{
@@ -444,6 +478,12 @@ footer{
     #resources-banner .banner-title,
     #data-banner .banner-title{
         font-size: 29px;
+    }
+
+/*=================== Login PAGE MEDIA QUERY CSS =======================*/
+    /* ====== Login Form ====== */
+    #login-banner .form-info{
+        width: 90%;
     }
     
 }
